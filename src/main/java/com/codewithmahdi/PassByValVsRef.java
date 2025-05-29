@@ -3,12 +3,13 @@ package com.codewithmahdi;
 public class PassByValVsRef {
     public static void main(String[] args) {
         int x = 1;
-        incrementByOne(x);
+        int val = incrementByOne(x);
         System.out.println(x);
+        System.out.println(val);
     }
 
-    static void incrementByOne(int value) {
-        value++;
+    static int incrementByOne(int value) {
+       return value + 1;
     }
 
 }
